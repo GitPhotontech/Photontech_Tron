@@ -1,6 +1,6 @@
 /* PHOTONTECH */
 /*
-  Buton Uygulaması
+  Servo Uygulaması
   
   11.pin'e bağlı servo motor 180 derece döndürülüyor ve tekrar sıfır derecesine geri getiriliyor.
   Bu işlem sürekli kendini tekrar ediyor.
