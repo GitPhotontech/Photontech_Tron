@@ -1,6 +1,6 @@
 /* PHOTONTECH */
 /*
-  Buzzer Uygulaması
+  Ultrasonic Sensor Uygulaması
   
   4. ve 12. pinlere bağlı ultrasonic sensör ile mesafe ölçümü yapılmıştır.
   Ölçülen mesafe seri haberleşme ile ekrana yazdırılmıştır.
