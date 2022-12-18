@@ -28,11 +28,11 @@ void setup() {
 void loop() {
   for (pos = 0; pos <= 180; pos += 1) { // pos değeri 0'dan 180'e çıkana kadar bu döngü çalışacak.
     // Her adımda pos değeri bir artacak
-    myservo.write(pos);              // servomuza her adımda pos değerine göre açılandırıyoruz.
+    servo1.write(pos);              // servomuza her adımda pos değerine göre açılandırıyoruz.
     delay(15);                       // 15ms(mili saniye) bekliyoruz.
   }
   for (pos = 180; pos >= 0; pos -= 1) { // pos değeri 180'den 0'a inene kadar bu döngü çalışacak.
-    myservo.write(pos);              // servomuza her adımda pos değerine göre açılandırıyoruz.
+    servo1.write(pos);              // servomuza her adımda pos değerine göre açılandırıyoruz.
     delay(15);                       // 15ms bekliyoruz.
   }
 }
