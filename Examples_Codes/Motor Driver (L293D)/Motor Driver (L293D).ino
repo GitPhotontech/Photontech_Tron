@@ -2,7 +2,7 @@
 /*
   Motor Sürücü Test Uygulaması
   
-  Motorlar ileri ve geri yönde hareket edecekler. Ardından durup hızları yükselip düşecek.
+  Motorlar ileri ve geri yönde hareket edecekler. 
    
   Bu örnek kod PHOTONTECH tarafından kamuya sunulmuştur.
   https://github.com/GitPhotontech/Photontech_Tron
