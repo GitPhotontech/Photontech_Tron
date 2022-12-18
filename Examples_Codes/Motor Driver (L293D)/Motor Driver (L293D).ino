@@ -32,17 +32,10 @@ void setup() {
 
 void loop() {
 	directionControl();
-	delay(1000);
-	speedControl();
-	delay(1000);
 }
 
 // Motor yön fonksiyonu
 void directionControl() {
-	// Motorlar maksimum hızda döndürülecek
-	// Bunun için PWM değeri 255 olarak ayarlanıyor.
-	analogWrite(enA, 255);
-	analogWrite(enB, 255);
 
 	// 1 ve 2.inci motorlar döndürülüyor
 	digitalWrite(in1, HIGH);
@@ -63,33 +56,5 @@ void directionControl() {
 	digitalWrite(in2, LOW);
 	digitalWrite(in3, LOW);
 	digitalWrite(in4, LOW);
-}
-
-// Bu fonksiyon ile motorların hızlarını kontrol ediyoruz.
-void speedControl() {
-	// Motorları çalıştırdık.
-	digitalWrite(in1, LOW);
-	digitalWrite(in2, HIGH);
-	digitalWrite(in3, LOW);
-	digitalWrite(in4, HIGH);
-	
-	// Hızlarını minimumdan maksimuma doğru çıkardık.
-	for (int i = 0; i < 256; i++) {
-		analogWrite(enA, i);
-		analogWrite(enB, i);
-		delay(20);
-	}
-	
-	// Şimdi hızlarını maksimumdan minimuma düşürdük.
-	for (int i = 255; i >= 0; --i) {
-		analogWrite(enA, i);
-		analogWrite(enB, i);
-		delay(20);
-	}
-	
-	// Motorları durdurduk.
-	digitalWrite(in1, LOW);
-	digitalWrite(in2, LOW);
-	digitalWrite(in3, LOW);
-	digitalWrite(in4, LOW);
+	delay(1000);
 }
